@@ -153,7 +153,10 @@ h2{
   height: 540px;
 }
 
-
+#img3{
+  width: 400px;
+  height: 540px;
+}
 
 .hi{
   display: flex;
@@ -251,6 +254,23 @@ body{
   line-height: normal;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px){
   .nav {
     display: flex;
@@ -336,6 +356,11 @@ body{
   }
 
   #photo1{
+    width: 161px;
+    height: 214px;
+  }
+
+  #img3{
     width: 161px;
     height: 214px;
   }
