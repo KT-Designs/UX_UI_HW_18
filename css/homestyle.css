@@ -253,6 +253,37 @@ body{
     grid-column: 1;
     height: 420px;
   }
+
+  #photo1{
+    height: 200px;
+    width: 100px;
+    float: right;
+    margin-top: 50px;
+  }
+  
+  #photo2{
+    height: 200px;
+    width: 100px;
+  }
+
+  #hi{
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Century Gothic Paneuropean','Arial';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #name{
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Lemon/Milk',"Catamaran";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
 }
 
 
