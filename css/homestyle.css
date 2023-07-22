@@ -195,7 +195,7 @@ body{
 /*Body End*/
 
 /*Media Query*/
-@media screen and (max-width: 600){
+@media screen and (max-width: 600px){
   .container {
     display: grid;
     grid-template-rows: 100px 100px /* Three rows with specific heights*/ 
