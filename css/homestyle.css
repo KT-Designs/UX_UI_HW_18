@@ -196,6 +196,55 @@ body{
 
 /*Media Query*/
 @media screen and (max-width: 600px){
+
+
+/*Header*/
+.nav {
+  display: flex;
+  width: 100%;
+  margin: 0%;
+  background: linear-gradient(180deg, #68523f 0%, #876D57 100%);
+  height: 121px;
+  flex-shrink: 0;
+  gap: 10px;
+  border-bottom: 1px solid;
+  border-color: black;
+}
+
+.left {
+  align-self: flex-end;
+  margin-left: 0%;
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Lemon/Milk',"Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right{
+  margin-left: auto;
+  margin-right: 10%;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Lemon/Milk',"Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo {
+  margin-left:10%;
+  margin-right:0%;
+  margin-top: 0%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+/*Header End*/
+
   .container {
     display: grid;
     grid-template-rows: 100px 100px /* Three rows with specific heights*/ 
@@ -206,18 +255,17 @@ body{
   
   .containerTop {
     display: grid;
-    grid-row: 420px;
-    grid-column: 1fr 1fr;
+    grid-row: 200px;
+    grid-column: 50% 50%;
     grid-template-rows: 100px /* Three rows with specific heights*/ 
     grid-gap: 10px; /*Adds 10px of space between rows and columns*/
   
   }
   
   .containerBottom {
-    margin-top: 60px;
     display: grid;
-    grid-row: 420px;
-    grid-column: 40% 60%;
+    grid-row: 150px;
+    grid-column: 70% 30%;
     grid-template-rows: 100px /* Three rows with specific heights*/ 
     grid-gap: 10px; /*Adds 10px of space between rows and columns*/
   
@@ -228,13 +276,15 @@ body{
   .item1 {
     grid-row: 1; /* The item occupies only row 1 */
     grid-column: 1;
-    height: 350px;
+    height: 200px;
     padding-top: 70px;
+    width: 50%;
   }
   .item2 {
     grid-row: 1; /* The item spans from row 2 to row 4 (takes two rows) */
     grid-column: 2;
-    height: 420px;
+    height: 200px;
+    width: 50%;
   }
   
   
@@ -245,25 +295,31 @@ body{
   .item3 {
     grid-row: 1; /* The item occupies only row 3 */
     grid-column: 2;
-    height: 420px;
-    width: 320px;
+    height: 200px;
+    padding-left: 24%;
+    
   }  
   .item4 {
     grid-row: 1; /* The item occupies only row 3 */
     grid-column: 1;
-    height: 420px;
+    height: 200px;
   }
+
+
+
+
+
+
 
   #photo1{
     height: 200px;
-    width: 100px;
-    float: right;
+    width: 150px;
     margin-top: 50px;
   }
   
   #photo2{
     height: 200px;
-    width: 100px;
+    width: 150px;
   }
 
   #hi{
@@ -284,6 +340,37 @@ body{
     line-height: normal;
   }
   
+  #intro{
+    margin-left: 5%;
+    font-family: 'Century Gothic Paneuropean','Arial';
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    line-height: 30px;
+    margin-top: 0%;
+  }
+
+  #study1{
+    height: 300px;
+    width: 220px;
+  }
+  
+  #study2{
+    height: 300px;
+    width: 220px;
+  }
+  
+  #study3{
+    height: 300px;
+    width: 220px;
+  }
+  .cases{
+    display: flex;
+    margin: 11.5%;
+    flex-direction: column;
+    align-content: center;
+    gap: 30px;
+  }
 }
 
 
