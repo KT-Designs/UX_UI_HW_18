@@ -1,3 +1,4 @@
+/*Header*/
 .nav {
   display: flex;
   width: 100%;
@@ -35,6 +36,11 @@
   line-height: normal;
 }
 
+#menuIcon{
+  width: 0px;
+  height: 0px;
+}
+
 .logo {
   margin-left:10%;
   margin-right:0%;
@@ -42,13 +48,393 @@
   flex-shrink: 0;
   cursor: pointer;
 }
+/*Header End*/
 
+
+
+
+
+
+
+/*Body Start*/
 body{
   background-color:#755E4A ;
   margin: 0px;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px /* Three rows with specific heights*/ 
+  grid-gap: 50px; /*Adds 10px of space between rows and columns*/
+  margin-left: 11.5%;
+  margin-right: 11.5%;
+}
 
+.containerTop {
+  display: grid;
+  grid-row: 420px;
+  grid-column: 1fr 1fr;
+  grid-template-rows: 100px /* Three rows with specific heights*/ 
+  grid-gap: 10px; /*Adds 10px of space between rows and columns*/
+
+}
+
+.containerBottom {
+  margin-top: 60px;
+  display: grid;
+  grid-row: 420px;
+  grid-column: 40% 60%;
+  grid-template-rows: 100px /* Three rows with specific heights*/ 
+  grid-gap: 10px; /*Adds 10px of space between rows and columns*/
+
+}
+
+
+
+.item1 {
+  grid-row: 1; /* The item occupies only row 1 */
+  grid-column: 1;
+  height: 350px;
+  padding-top: 70px;
+}
+.item2 {
+  grid-row: 1; /* The item spans from row 2 to row 4 (takes two rows) */
+  grid-column: 2;
+  height: 420px;
+}
+
+
+
+
+
+
+.item3 {
+  grid-row: 1; /* The item occupies only row 3 */
+  grid-column: 1;
+  height: 420px;
+  width: 320px;
+}  
+.item4 {
+  grid-row: 1; /* The item occupies only row 3 */
+  grid-column: 2;
+  height: 420px;
+}
+
+
+
+
+
+
+
+
+#hi{
+  color: #FFF;
+  font-size: 38px;
+  font-family: 'Century Gothic Paneuropean','Arial';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#name{
+  color: #FFF;
+  font-size: 40px;
+  font-family: 'Lemon/Milk',"Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#photo1{
+  height: 420px;
+  width: 320px;
+  float: right;
+  margin-top: 50px;
+}
+
+#photo2{
+  height: 420px;
+  width: 320px;
+}
+
+#intro{
+  margin-top:100px;
+  margin-left: 5%;
+  font-family: 'Century Gothic Paneuropean','Arial';
+  font-weight: 500;
+  color: white;
+  line-height: 30px;
+}
+
+.cases{
+  display: flex;
+  margin: 11.5%;
+  max-width: 77%;
+  justify-content: space-between;
+}
+
+.study:hover{
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+
+.study{
+  transform: scale(1.0);
+  transition: 0.25s;
+}
+
+#study1{
+  height: 400px;
+  width: 300px;
+}
+
+#study2{
+  height: 400px;
+  width: 300px;
+}
+
+#study3{
+  height: 400px;
+  width: 300px;
+}
+/*Body End*/
+
+/*Media Query*/
+@media screen and (max-width: 600px){
+
+
+/*Header*/
+.nav {
+  display: flex;
+  width: 100%;
+  margin: 0%;
+  background: linear-gradient(180deg, #68523f 0%, #876D57 100%);
+  height: 121px;
+  flex-shrink: 0;
+  gap: 10px;
+  border-bottom: 1px solid;
+  border-color: black;
+}
+
+.left {
+  align-self: flex-end;
+  margin-left: 0%;
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Lemon/Milk',"Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: none;
+}
+
+.right{
+  margin-left: auto;
+  margin-right: 10%;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Lemon/Milk',"Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: none;
+}
+
+#menuIcon{
+  height: 50px;
+  width: 50px;
+}
+
+.rightH{
+  margin-left: auto;
+  margin-right: 10%;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-left:5%;
+  margin-right:0%;
+  margin-top: 0%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+/*Header End*/
+
+  .container {
+    display: grid;
+    grid-template-rows: 100px 100px /* Three rows with specific heights*/ 
+    grid-gap: 50px; /*Adds 10px of space between rows and columns*/
+    margin-left: 11.5%;
+    margin-right: 11.5%;
+  }
+  
+  .containerTop {
+    display: grid;
+    grid-row: 200px;
+    grid-column: 50% 50%;
+    grid-template-rows: 100px /* Three rows with specific heights*/ 
+    grid-gap: 10px; /*Adds 10px of space between rows and columns*/
+  
+  }
+  
+  .containerBottom {
+    display: grid;
+    grid-row: 150px;
+    grid-column: 70% 30%;
+    grid-template-rows: 100px /* Three rows with specific heights*/ 
+    grid-gap: 10px; /*Adds 10px of space between rows and columns*/
+  
+  }
+  
+  
+  
+  .item1 {
+    grid-row: 1; /* The item occupies only row 1 */
+    grid-column: 1;
+    height: 200px;
+    padding-top: 70px;
+    width: 100%;
+  }
+  .item2 {
+    grid-row: 1; /* The item spans from row 2 to row 4 (takes two rows) */
+    grid-column: 2;
+    height: 200px;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  .item3 {
+    grid-row: 1; /* The item occupies only row 3 */
+    grid-column: 2;
+    height: 200px;
+    padding-left: 24%;
+    display: none;
+    
+  }  
+  .item4 {
+    grid-row: 1; /* The item occupies only row 3 */
+    grid-column:1;
+    height: 400px;
+    margin-left: 0%;
+  }
+
+
+
+
+
+
+
+  #photo1{
+    height: 250px;
+    width: auto;
+    margin-top: 50px;
+  }
+  
+  #photo2{
+    height: 200px;
+    width: 150px;
+    display: none;
+  }
+
+  #hi{
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Century Gothic Paneuropean','Arial';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #name{
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Lemon/Milk',"Catamaran";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #intro{
+    font-family: 'Century Gothic Paneuropean','Arial';
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    line-height: 30px;
+    margin-top: 0%;
+    margin-left: 0px;
+  }
+
+  #study1{
+    height: 300px;
+    width: 220px;
+  }
+  
+  #study2{
+    height: 300px;
+    width: 220px;
+  }
+  
+  #study3{
+    height: 300px;
+    width: 220px;
+  }
+  .cases{
+    display: flex;
+    margin: 11.5%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  
+.foot{
+  display: flex;
+  background: linear-gradient(360deg, #5f4b3a 0%, #876D57 100%);
+  height: 150px;
+  width: 100%;
+  flex-shrink: 0;
+  border-top: 1px solid;
+  border-color: black;
+  bottom: 0;
+  padding-bottom: 5px;
+}
+
+.logoF{
+  margin-left: 5%;
+}
+
+
+.rightf{
+  display: flex;
+  margin-left: auto;
+  margin-right: 11.5%;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Lemon/Milk',"Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-direction: column;
+  gap: 10px;
+}
+}
+
+
+
+
+
+
+/*Footer Start*/
 .foot{
   display: flex;
   margin: 0%;
@@ -92,6 +478,8 @@ body{
   cursor: pointer;
 }
 
+/*Footer Start*/
+
 .nav a{
   text-decoration: none;
   color: white;
@@ -108,89 +496,12 @@ body{
   text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
   cursor: pointer;
 }
+/*Footer End*/
 
 
+/*;*/
 
 
-
-
-
-
-
-
-
-
-
-h1{
-  color: #FFF;
-  font-size: 38px;
-  font-family: 'Century Gothic Paneuropean','Arial';
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  
-}
-
-h2{
-  color: #FFF;
-  font-size: 40px;
-  font-family: 'Lemon/Milk',"Catamaran";
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.photo1{
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: 10%;
-}
-
-.hi{
-  display: flex;
-}
-
-.name{
-  flex-direction: column;
-  margin-left: 11.5%;
-  margin-top: 200px;
-}
-
-.icon{
-  justify-self: space-between;
-  margin-left:50%;
-  margin-right: 50%;
-}
-
-.hero2{
-  display: flex;
-  margin-right: 11.5%;
-  margin-left: 11.5%;
-}
-
-.intro{
-  margin-top:100px;
-  margin-left: 100px;
-  font-family: 'Century Gothic Paneuropean','Arial';
-  font-weight: 500;
-  color: white;
-  line-height: 30px;
-}
-
-
-
-.cases{
-  display: flex;
-  margin: 11.5%;
-  max-width: 77%;
-  justify-content: space-between;
-}
-
-body{
-  background-color:#755E4A ;
-  margin: 0px;
-}
 
 .foot{
   display: flex;
@@ -202,16 +513,6 @@ body{
   border-color: black;
   bottom: 0;
   padding-bottom: 5px;
-}
-
-.study:hover{
-  transform: scale(1.1);
-  transition: 0.25s;
-}
-
-.study{
-  transform: scale(1.0);
-  transition: 0.25s;
 }
 
 .logoF{
@@ -228,8 +529,4 @@ body{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-@media only screen and (max-width: 600){
-  
 }
